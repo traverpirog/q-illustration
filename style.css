@@ -1,0 +1,76 @@
+.q-round {
+    animation: q-round-anim 80s linear infinite;
+    transform-origin: center;
+
+}
+
+@keyframes q-round-anim {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.q-item {
+    animation: q-item-round 80s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes q-item-round {
+    from {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.q-item-inner-2, .q-small-item-inner-2 {
+    animation: q-item-small-scale-2 2s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes q-item-small-scale-2 {
+    0%, 100% {
+        transform: scale(1.1);
+    } 50% {
+        transform: scale(0.7);
+    }
+}
+
+.q-item-inner, .q-small-item-inner {
+    animation: q-item-small-scale 2s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes q-item-small-scale {
+    0%, 100% {
+        transform: scale(0.9);
+    } 50% {
+        transform: scale(1.1);
+    }
+}
+
+.q-small-item {
+    animation: q-item-small-round 80s linear infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+@keyframes q-item-small-round {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
