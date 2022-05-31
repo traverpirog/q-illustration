@@ -1,3 +1,15 @@
+.q-word {
+    animation: q-word-anim 5s linear infinite;
+}
+
+@keyframes q-word-anim {
+    from {
+        fill: black;
+    } to {
+        fill: orange;
+    }
+}
+
 .q-round {
     animation: q-round-anim 80s linear infinite;
     transform-origin: center;
