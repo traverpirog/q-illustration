@@ -1,12 +1,16 @@
 .q-word {
     animation: q-word-anim 5s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
 }
 
 @keyframes q-word-anim {
-    from {
-        fill: black;
-    } to {
-        fill: orange;
+    from, to {
+        fill: #FFA723;
+        transform: scale(0.8);
+    } 50% {
+        fill: #1d1d1d;
+        transform: scale(1);
     }
 }
 
